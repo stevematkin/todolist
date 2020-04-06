@@ -1,0 +1,54 @@
+html, body {
+    background-color: rgb(165, 62, 62);
+    margin: 0px;
+    height: 100%;
+}
+
+
+header {
+    height: 75px;
+    border: 1px solid black;
+}
+
+.form-button {
+margin: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    
+}
+
+#project-container {
+    width: 35%;
+    text-align: center;
+    
+    border: 1px solid black;
+}
+
+#task-container {
+    width: 65%;
+    text-align: center;
+    
+    border: 1px solid black;
+}
+
+.modal-background {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100vh;
+    
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+form {
+    background-color: white;
+}
