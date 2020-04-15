@@ -1,8 +1,5 @@
 import {projectFactory} from "./project";
-
-
-let projects = [];
-
+import {formGenerator} from "./create-forms";
 
 
 
