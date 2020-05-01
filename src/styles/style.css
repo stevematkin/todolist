@@ -11,7 +11,7 @@ header {
 }
 
 .form-button {
-margin: 20px;
+    margin: 20px;
 }
 
 #content {
@@ -51,4 +51,21 @@ margin: 20px;
 
 form {
     background-color: white;
+}
+
+#project-list {
+
+}
+.individual-project-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 25px;
+
+}
+
+.delete-project-button {
+
 }

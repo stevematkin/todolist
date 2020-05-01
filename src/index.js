@@ -1,32 +1,21 @@
-import "./styles/style.css";
-import {createProjectForm, removeModal} from "./modules/create-forms";
-import {projectFactory} from "./modules/project";
+import './styles/style.css';
+import {createProjectModal, removeModal} from './modules/create-forms';
+import {createNewProject, projectArray, deleteProject} from './modules/project-controller';
+import {projectFactory} from './modules/factories';
+import {renderProjects} from './modules/dom-manipulation';
 
-let projects = [];
+createProjectModal();
+renderProjects();
+
+
 
 const createProjectButton = document.querySelector('#project-button');
 createProjectButton.addEventListener('click', createNewProject);
 
-function createNewProject() {
-    //duplicating here somehow?
-    createProjectForm();
-
-    const submitButton = document.getElementById('submit-project-button');
-    submitButton.addEventListener('click', submitProjectForm);
-    function submitProjectForm(e) {
-        e.preventDefault();
-        let input = document.getElementById('project-name').value;
-        const newProject = projectFactory(input);
-        projects.push(newProject);
-        submitButton.removeEventListener('click', submitProjectForm);
-        
-        removeModal();
-        
-        console.log(projects);
-    }
-        
-    
-}
+// const deleteProjectButton = document.querySelectorAll('.delete-project-button');
+// deleteProjectButton.forEach(deleteProjectButton => {
+//     deleteProjectButton.addEventListener('click', deleteProject);
+// });
 
 
 
